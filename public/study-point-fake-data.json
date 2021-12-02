@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "course_title": "Betsy Lindsay",
+    "course_description": "Betsy Lindsay",
+    "course_cost": 1500
+  },
+  {
+    "id": 1,
+    "course_title": "Betsy Lindsay",
+    "course_description": "Betsy Lindsay",
+    "course_cost": 1500
+  },
+  {
+    "id": 2,
+    "course_title": "Betsy Lindsay",
+    "course_description": "Betsy Lindsay",
+    "course_cost": 1500
+  }
+]
