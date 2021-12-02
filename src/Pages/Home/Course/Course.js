@@ -11,8 +11,8 @@ const Course = (props) => {
                 <div class="card-body">
                     <h5 class="card-title">{course_title}</h5>
                     <p class="card-text">{course_description}</p>
-                    <h4>cost: {course_cost}</h4>
-                    <button className="btn btn-warning w-100">Enroll now</button>
+                    <h4>Cost: {course_cost}</h4>
+                    <button className="btn btn-warning w-100">Enroll Now</button>
                 </div>
             </div>
         </div>

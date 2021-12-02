@@ -32,8 +32,8 @@ const Courses = () => {
     ]
 
     return (
-        <div className="course-contianer container-fluid py-5">
-            <h4 className="fs-2 fw-bolder p-3">Our Courses</h4>
+        <div className="course-contianer container-fluid py-3">
+            <h2 className="fs-1 fw-bolder p-3 title">Our Courses</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
                 {
                     courses.map(course => <Course

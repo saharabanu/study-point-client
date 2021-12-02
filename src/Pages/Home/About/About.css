@@ -1,0 +1,14 @@
+.about-header{
+    font-family: 'Poppins', sans-serif;
+    color: #9660be;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.about-study-point-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+iframe{
+    width: 100%;
+}
