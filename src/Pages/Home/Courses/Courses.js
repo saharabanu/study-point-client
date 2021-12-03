@@ -1,5 +1,5 @@
 import React from 'react';
-import webDev from '../../../images/courses-img/p_responsive_web_dev.png';
+import webDev from '../../../images/courses-img/programming-for-kid.jpg';
 import Course from '../Course/Course';
 
 const Courses = () => {
@@ -28,11 +28,35 @@ const Courses = () => {
             "course_cost": 1500,
             "course_img": `${webDev}`
 
+        },
+        {
+            "id": 3,
+            "course_title": "Responsive Web Development",
+            "course_description": "Professional responsive web development course",
+            "course_cost": 1500,
+            "course_img": `${webDev}`
+
+        },
+        {
+            "id": 4,
+            "course_title": "Responsive Web Development",
+            "course_description": "Professional responsive web development course",
+            "course_cost": 1500,
+            "course_img": `${webDev}`
+
+        },
+        {
+            "id": 5,
+            "course_title": "Responsive Web Development",
+            "course_description": "Professional responsive web development course",
+            "course_cost": 1500,
+            "course_img": `${webDev}`
+
         }
     ]
 
     return (
-        <div className="course-contianer container-fluid py-3">
+        <div className="course-contianer container-fluid py-3 bg-light">
             <h2 className="fs-1 fw-bolder p-3 title">Our Courses</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
                 {

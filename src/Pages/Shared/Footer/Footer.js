@@ -1,9 +1,8 @@
 import React from 'react';
-import Link from 'react-router-dom';
 import './Footer.css';
 const Footer = () => {
     return (
-        <div className="container-fluid bg-dark p-0">
+        <div className="container-fluid bg-dark ">
             <div className="row justify-content-center align-items-center p-5 ">
                 <div className="col-12 col-lg-6 col-md-6 col-sm-12  text-start ">
                     <h2 className="footer-title">Study Point</h2>
@@ -19,9 +18,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="bg-secondary">
-                <a className="text-decoration-none text-light" target="_blank" href="https://www.linkedin.com/in/taseenbappi/" rel="noreferrer">Developer: Taseen Bappi</a>
-            </div>
+            <a className="text-decoration-none text-light" target="_blank" href="https://www.linkedin.com/in/taseenbappi/" rel="noreferrer">Developer: Taseen Bappi</a>
         </div>
     );
 };

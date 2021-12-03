@@ -14,7 +14,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="col-12 col-lg-6 col-md-6 col-sm-12 p-2">
-                    <iframe width="560" height="350" src="https://www.youtube.com/embed/Db7xzarI3B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <iframe className="iframe-video" width="600" height="400" src="https://www.youtube.com/embed/Db7xzarI3B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
                     </iframe>
                 </div>
