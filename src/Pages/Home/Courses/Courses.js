@@ -58,7 +58,7 @@ const Courses = () => {
     return (
         <div className="course-contianer container-fluid py-3 bg-light">
             <h2 className="fs-1 fw-bolder p-3 title">Our Courses</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 container mx-auto">
                 {
                     courses.map(course => <Course
                         key={course.id}
