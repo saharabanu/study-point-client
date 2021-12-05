@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="container-fluid bg-dark ">
             <div className="row justify-content-center align-items-center p-5 ">
-                <div className="col-12 col-lg-6 col-md-6 col-sm-12  text-start ">
+                <div className="col-12 col-lg-6 col-md-6 col-sm-12  text-center ">
                     <h2 className="footer-title">Study Point</h2>
                     <div className="text-light ">
                         <i class="fab fa-facebook-square p-1 fs-3"></i>
@@ -13,12 +13,13 @@ const Footer = () => {
                         <i class="fab fa-linkedin p-1 fs-3"></i>
                     </div>
                     <p className="text-light">©copyrights since - 2021</p>
+                    <a className="text-decoration-none text-light" target="_blank" href="https://www.linkedin.com/in/taseenbappi/" rel="noreferrer">Developer: Taseen Bappi</a>
                 </div>
-                <div className="col-12 col-lg-6 col-md-6 col-sm-12">
+                {/* <div className="col-12 col-lg-6 col-md-6 col-sm-12 ">
 
-                </div>
+                </div> */}
             </div>
-            <a className="text-decoration-none text-light" target="_blank" href="https://www.linkedin.com/in/taseenbappi/" rel="noreferrer">Developer: Taseen Bappi</a>
+
         </div>
     );
 };

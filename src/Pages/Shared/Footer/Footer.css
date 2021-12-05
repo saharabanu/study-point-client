@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif; 
     font-weight: 800;
     color: antiquewhite;
-    
-    
+}
+.footer-list li a{
+    text-decoration: none;
+    color: antiquewhite;
+   
+   
 }
