@@ -7,7 +7,7 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="shadow-sm">
             <Container fluid>
-                <Navbar.Brand href="#home" style={{ color: "purple" }} className="nav-title">Study Point</Navbar.Brand>
+                <Navbar.Brand style={{ color: "purple" }} className="nav-title">Study Point</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto fw-bolder">
