@@ -5,9 +5,9 @@ import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="shadow-sm">
+        <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="shadow-sm" fixed="top">
             <Container fluid>
-                <Navbar.Brand style={{ color: "purple" }} className="nav-title">Study Point</Navbar.Brand>
+                <Navbar.Brand style={{ color: "#9660be" }} className="nav-title">Study Point</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto fw-bolder">

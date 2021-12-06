@@ -1,5 +1,5 @@
 .course-card{
-    width: 300px;
+    width: 100%;
     /* height: 425px; */
     background-color: white;
     border-radius: 10px;
@@ -9,10 +9,8 @@
 }
 
 .course-card:hover{
-    box-shadow: rgba(255, 172, 28, 0.199) -10px 10px, rgba(255, 172, 28, 0.19) -20px 20px ;
+    box-shadow: rgba(183, 7, 236, 0.199) -10px 10px, rgba(202, 28, 255, 0.075) -20px 20px ;
 }
-
-
 
 .course-card .content{
     display: flex;
@@ -22,18 +20,21 @@
 }
 
 .course-card .content h3{
+    padding: 13px;
     width: 100%;
     font-family: 'Poppins', sans-serif; 
     font-weight: 300;
-    font-size: 28px;
+    font-size: 22px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #9660be;
+    border-bottom: 3px solid #9660be;
 }
 
 .course-card .content p{
-    font-size: 22px;
+    text-align: start;
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .course-card .content a{
@@ -41,11 +42,17 @@
     text-decoration: none;
 }
 
+.course-duration{
+    background-color: #ca4b562f;
+    padding: 5px;
+    border-radius: 20px 0px 0 20px;
+}
+
 .course-card .content button{
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
-    font-size: 20px;
-    color: #bd7904;
+    font-size: 18px;
+    color: #110299;
     width: 100%;
     height: 45px;
     text-align: center;
@@ -55,7 +62,7 @@
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    background-color: #ffac1c26;
+    background-color: #5a057c1a;
     transition: 0.2s ease-in-out;
 }
 

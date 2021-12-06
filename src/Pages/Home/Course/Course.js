@@ -3,26 +3,22 @@ import './Course.css';
 
 const Course = (props) => {
 
-    const { course_title, course_description, course_cost, course_img } = props.course;
+    const { course_title, course_cost, course_img } = props.course;
 
     return (
-        <div class="col">
-            {/* <div class="card h-90">
-                <img src={course_img} class="card-img-top img-fluid p-2" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{course_title}</h5>
-                    <p class="card-text">{course_description}</p>
-                    <h4>Cost: {course_cost}</h4>
-                    <button className="btn btn-warning w-100">Enroll Now</button>
-                </div>
-            </div> */}
-            <div class="course-card">
-                <div class="img"></div>
-                <div class="content">
-                    <img src={course_img} alt="" />
+        <div className="col">
+
+            <div className="course-card">
+                <div className="img"></div>
+                <div className="content">
+                    <img src={course_img} alt="" className="img-fluid" />
                     <h3>{course_title}</h3>
-                    <p>{course_description}</p>
-                    <p>Cost: {course_cost}</p>
+                    {/* <p>{course_description}</p> */}
+                    <div className="d-flex justify-content-between">
+                        <p className="text-success">ট {course_cost}</p>
+                        <p className="text-danger course-duration"><i className="far fa-clock"></i> 25hr</p>
+                    </div>
+
                     <button className=" ">Enroll Now</button>
                 </div>
 

@@ -2,11 +2,12 @@
   background-image: url(../../../images/banner-img/banner-bg.png); /* The image used */
   background-color: #efefef; /* Used if the image is unavailable */
   width: 100%;
-  height: 90vh; /*You must set a specified height*/
+  height: 100vh; /*You must set a specified height*/
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-blend-mode: multiply;
+
 }
 .title-bn{
     color: rgb(59, 2, 59);
