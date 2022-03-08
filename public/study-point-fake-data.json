@@ -16,5 +16,32 @@
     "course_title": "Betsy Lindsay",
     "course_description": "Betsy Lindsay",
     "course_cost": 1500
-  }
+  },
+  {
+    "id": 4,
+    "course_title": "Responsive Web Development",
+    "course_description": "Professional responsive web Design and UI and UX course",
+    "course_cost": 5000,
+    "course_offer": 20,
+    "course_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnKAqo1AC1JGtRMyzwanEu5_Ct8rfyAuH4RLQ2jjThg42bSKgBqJrsFazD8f5Moiz9CA&usqp=CAU"
+
+},
+{
+    "id": 5,
+    "course_title": "Responsive Web Development",
+    "course_description": "Professional responsive web development course",
+    "course_cost": 10000,
+    "course_offer": 50,
+    "course_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnKAqo1AC1JGtRMyzwanEu5_Ct8rfyAuH4RLQ2jjThg42bSKgBqJrsFazD8f5Moiz9CA&usqp=CAU"
+
+},
+{
+    "id": 6,
+    "course_title": "Responsive Web Development",
+    "course_description": "Professional responsive web development course",
+    "course_cost": 1500,
+    "course_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnKAqo1AC1JGtRMyzwanEu5_Ct8rfyAuH4RLQ2jjThg42bSKgBqJrsFazD8f5Moiz9CA&usqp=CAU"
+
+}
 ]
+
