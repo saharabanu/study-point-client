@@ -46,7 +46,7 @@ const CourseDetails = () => {
                         
                         </div>
                     <div className="col-md-6">
-                    {/* <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+                    {/* <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/f1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
                     <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLSccTEkbJ_4cby_FxuaGcRQV3tHAQ8r8Qn88Lq47uQa8GBqPNw/viewform?embedded=true" width="640" height="1249" frameborder="0" marginheight="0" marginwidth="0">Buy Now</iframe>
                         
                          {/* <iframe className='img-fluid' src="https://docs.google.com/forms/d/e/1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Buy Now</iframe> */}
