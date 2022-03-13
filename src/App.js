@@ -5,6 +5,7 @@ import CourseDetails from "./Pages/Home/CourseDetails/CourseDetails";
 import Home from './Pages/Home/Home/Home';
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
+import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           
           <Route path="/home" element={<Home/>}/>
           
-          <Route path="/courses/:courseId" element={<CourseDetails/>}/>
+          <Route path="/courses/:courseId" element={ <PrivateRoute><CourseDetails/></PrivateRoute> }/>
           
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>

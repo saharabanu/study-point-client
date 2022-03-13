@@ -24,10 +24,10 @@ const CourseDetails = () => {
     return (
         <div className='container'>
             <div>
-            <img  src={singleCourse?.course_img} alt="" className="img-fluid detail-image" />
+            <img  src={singleCourse?.course_thumbnail} alt="" className="img-fluid detail-image w-50 h-25" />
             </div>
             
-            <div className='py-5'>
+            <div className='py-5 '>
 
  
                 <div className="row ">
@@ -36,11 +36,16 @@ const CourseDetails = () => {
                             <h2>{singleCourse?.desc_heading}</h2>
                             <h5>{singleCourse?.desc_intro}</h5>
                             <h3>{singleCourse?.course_heading}</h3>
-                            <p>{singleCourse?.course_details_html}</p>
+                            <p className='bg-danger opacity-50 text-white'>{singleCourse?.course_details_html}</p>
                             <p>{singleCourse?.course_details_css}</p>
                             <p>{singleCourse?.course_details_botstrap}</p>
                             <p>{singleCourse?.course_details_tailwind}</p>
                             <p>{singleCourse?.course_details_javascript}</p>
+                            <p>{singleCourse?.course_intro}</p>
+                            <p>{singleCourse?.course_react}</p>
+                            <p>{singleCourse?.course_backend}</p>
+                            <p>{singleCourse?.course_others}</p>
+                            
                             
                         </div>
                         

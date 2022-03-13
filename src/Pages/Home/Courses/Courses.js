@@ -3,62 +3,15 @@ import Course from '../Course/Course';
 
 const Courses = () => {
 
-    // const courses = [
-    //     {
-    //         "id": 0,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description": "Professional responsive web development course",
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     },
-    //     {
-    //         "id": 1,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description":"HTM Introduction HTML,  HTML structure, HTML tag,HTML Form Desig ,HTML table",
-           
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     },
-    //     {
-    //         "id": 2,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description": "Professional responsive web development course",
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     },
-    //     {
-    //         "id": 3,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description": "Professional responsive web development course",
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     },
-    //     {
-    //         "id": 4,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description": "Professional responsive web development course",
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     },
-    //     {
-    //         "id": 5,
-    //         "course_title": "Responsive Web Development",
-    //         "course_description": "Professional responsive web development course",
-    //         "course_cost": 1500,
-    //         "course_img": `${webDev}`
-
-    //     }
-    // ]
+    
     const [courses,setCourses] = useState([])
     useEffect(()=>{
         fetch('/courses.json')
         .then(res=>res.json())
-        .then(data=>setCourses(data))
+        .then(data=>{
+            setCourses(data)
+            console.log(data)
+        })
     },[])
 
     return (
