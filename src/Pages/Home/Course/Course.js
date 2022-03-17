@@ -22,7 +22,7 @@ const Course = (props) => {
                     </div>
                     <p className="text-success">{course_description}</p>
 
-                    <Link to={`/courses/${id}`}> <button className=" ">Enroll Now</button></Link>
+                    <Link to={`/course/${id}`}> <button className=" ">Enroll Now</button></Link>
                 </div>
 
             </div>
@@ -32,4 +32,4 @@ const Course = (props) => {
 
 export default Course;
 
-{/* <i className="far fa-clock"></i> */}
+

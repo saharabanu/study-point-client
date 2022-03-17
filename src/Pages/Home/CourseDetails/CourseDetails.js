@@ -2,25 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const CourseDetails = () => {
-    const {courseId} = useParams();
-    const [courseDeatils,setCourseDetails] = useState([]);
-    const [singleCourse,setSingleCourse]= useState({});
+    const {id} = useParams();
+    // const [courseDeatils,setCourseDetails] = useState([]);
+    const [singleCourse,setSingleCourse]= useState([]);
 
     useEffect(()=>{
         fetch('/courses.json')
         .then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-            setCourseDetails(data)})
-    },[])
+        .then((data)=>{
+            const foundCourse= data.filter(detail=>detail.id === id)
+            console.log(foundCourse)
+            setSingleCourse(foundCourse)})
+    },[id]);
 
-    useEffect(()=>{
-        const foundSingleCourse = courseDeatils.find(course=> course.id !== courseId)
-        setSingleCourse(foundSingleCourse);
-        console.log(foundSingleCourse)
+    const {desc_heading,desc_intro,course_heading,course_details_html,course_details_css,course_details_botstrap,course_details_tailwind,course_details_javascript,course_intro,course_react,course_backend,course_others}= singleCourse[0] || {};
 
-    },[courseDeatils])
-    console.log(courseDeatils)
+
+    
+   
     return (
         <div className='container'>
             <div>
@@ -33,35 +32,46 @@ const CourseDetails = () => {
                 <div className="row ">
                     <div className="col-md-6">
                         <div className='text-start'>
-                            <h2>{singleCourse?.desc_heading}</h2>
-                            <h5>{singleCourse?.desc_intro}</h5>
-                            <h3>{singleCourse?.course_heading}</h3>
-                            <p className='bg-danger opacity-50 text-white'>{singleCourse?.course_details_html}</p>
-                            <p>{singleCourse?.course_details_css}</p>
-                            <p>{singleCourse?.course_details_botstrap}</p>
-                            <p>{singleCourse?.course_details_tailwind}</p>
-                            <p>{singleCourse?.course_details_javascript}</p>
-                            <p>{singleCourse?.course_intro}</p>
-                            <p>{singleCourse?.course_react}</p>
-                            <p>{singleCourse?.course_backend}</p>
-                            <p>{singleCourse?.course_others}</p>
                             
+                            <h2>{desc_heading}</h2>
+                            <br />
+                            <h5 className='lh-lg'>{desc_intro}</h5>
+                            <br />
+                            <h3>{course_heading}</h3>
+                            <br />
+                            <p className='bg-danger opacity-50 text-white fs-5'>{course_details_html}</p>
                             
+                             <div className=' fs-5'>
+                             <p>{course_details_css}</p>
+                             
+                            <p>{course_details_botstrap}</p>
+                            
+                            <p>{course_details_tailwind}</p>
+                            
+                            <p>{course_details_javascript}</p>
+                            
+                            <p>{course_intro}</p>
+                            <p>{course_react}</p>
+                            
+                            <p>{course_backend}</p>
+                            
+                            <p>{course_others}</p>
+                             </div>
+                            
+                             
                         </div>
                         
                         </div>
                     <div className="col-md-6">
-                    {/* <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/f1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
-                    <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLSccTEkbJ_4cby_FxuaGcRQV3tHAQ8r8Qn88Lq47uQa8GBqPNw/viewform?embedded=true" width="640" height="1249" frameborder="0" marginheight="0" marginwidth="0">Buy Now</iframe>
+                    
+                    <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLSccTEkbJ_4cby_FxuaGcRQV3tHAQ8r8Qn88Lq47uQa8GBqPNw/viewform?embedded=true" width="640" height="1249" frameborder="0" marginheight="0" marginwidth="0" title="google form ">Buy Now</iframe>
                         
-                         {/* <iframe className='img-fluid' src="https://docs.google.com/forms/d/e/1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Buy Now</iframe> */}
+                        
                         </div>
                     </div>
             
             </div>
-             {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0"  target="_blank" rel="noopener noreferrer"> Buy Now</a> */}
-
-            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw9YTFZhS9BSDVGZe4J9p8Du3sx_6X31cSmimTHEc4u2gs0A/viewform?embedded=true">Buy Now</iframe> */}
+            
 
            
         </div>
@@ -70,4 +80,3 @@ const CourseDetails = () => {
 
 export default CourseDetails;
 
-// npm i emailjs
