@@ -64,7 +64,7 @@ const CourseDetails = () => {
                         </div>
                     <div className="col-md-6">
                     
-                    <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLSccTEkbJ_4cby_FxuaGcRQV3tHAQ8r8Qn88Lq47uQa8GBqPNw/viewform?embedded=true" width="640" height="1249" frameborder="0" marginheight="0" marginwidth="0" title="google form ">Buy Now</iframe>
+                    <iframe className='img-fluid h-100' src="https://docs.google.com/forms/d/e/1FAIpQLSccTEkbJ_4cby_FxuaGcRQV3tHAQ8r8Qn88Lq47uQa8GBqPNw/viewform?embedded=true" width="640" height="1249" frameborder="0" marginheight="0" marginwidth="0" title=" study point google form ">Buy Now</iframe>
                         
                         
                         </div>
